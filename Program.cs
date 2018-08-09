@@ -13,7 +13,7 @@ namespace FunctionalProgramming
             Program program = new Program();
 
             var poisonedApples = program.PickApples()
-                .Take(1000)
+                .Take(10000)
                 .Where(a => a.Poisoned == true)
                 .Count();
             Console.WriteLine($"Poisoned Apples in 10,000 = {poisonedApples}");
